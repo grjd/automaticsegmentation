@@ -11,7 +11,20 @@ Code Here
 	# Get longitudinal dataframe
 	#oneway_anovatest(dataframe_orig)
 	df_fsl_lon, df_free_lon = convertdf_intolongitudinal(dataframe_orig)
+	# Remove NaNS
 	df_fsl_lon, df_free_lon = df_fsl_lon.dropna(), df_free_lon.dropna()
 	df_fsl_lon = outlier_detection_isoforest(df_fsl_lon)
+	# IsoForest enesemble algorithm for outlier removal with contaminatio parameter (0,1) 
 	df_free_lon = outlier_detection_isoforest(df_free_lon)
 ```
+df_fsl_lon.shape == df_free_lon.shape (7000,16)
+7000 rows and 16 columns, sex, age and 14 segemnatation estimates both hemispheres:
+1. Thalamus
+2. Putamen 
+3. Amygdala 
+4. Pallidum 
+5. Caudate 
+6. Hippocampus 
+7. Accumbens
+After remving the NaNs FSL lon 4068 rows and FreeSurfer 4009 rows.
+
