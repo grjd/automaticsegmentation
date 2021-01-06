@@ -30,3 +30,9 @@ After remving the NaNs FSL lon 4068 rows and FreeSurfer 4009 rows.
 
 eigenvalues analysis
 https://math.stackexchange.com/questions/243533/how-to-intuitively-understand-eigenvalue-and-eigenvector
+Whenall correlations are positive, this first eigenvalue is approximately a linear function of the average correlation among the variables.
+The first eigenvalue \lambda_i indicates themaximum amount of the variance of the variables which can be ac-counted for with a linear model by a single underlying factor. All component analysis does is map the n(n - 1)/2 correlations among n variables into n eigenvalues and their associated eigenvectors, so the eigenvalues must be functions of those underlying correlations.
+Discovering how the eigenvalues relate to the correlations would in-crease our intuitive understanding of them and of component analysismore generally.
+https://journals.sagepub.com/doi/pdf/10.1177/001316448104100102
+
+http://www.ccgalberta.com/ccgresources/report14/2012-408_understanding_correlation_matrices.pdf
