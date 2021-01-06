@@ -28,3 +28,5 @@ df_fsl_lon.shape == df_free_lon.shape (7000,16)
 7. Accumbens
 After remving the NaNs FSL lon 4068 rows and FreeSurfer 4009 rows.
 
+eigenvalues analysis
+https://math.stackexchange.com/questions/243533/how-to-intuitively-understand-eigenvalue-and-eigenvector
