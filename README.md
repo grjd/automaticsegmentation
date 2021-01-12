@@ -12,7 +12,9 @@ In the era of big data, automated segmentation is called to play a preponderant 
 
 **Dataset description**
 
-The dataset contains two csv files, *df_fsl_lon.csv* is the Pandas dataframe containing the the results of the automted segmentation with FSL and *df_free_lon.csv* contained the automated segmentation output obtained with FreeSurfer. 
+The dataset contains two csv files: 
+-*df_fsl_lon.csv* is the Pandas dataframe containing the results of the automated segmentation performed with FSL 
+-*df_free_lon.csv* contains the  Pandas dataframe containing the results of the automated segmentation performed with FreeSurfer. 
 The fields include in the dataset are as follows:
 - _Age_ the age of the participant in the moemnt of performing the MRI scan (%.2f)
 - _Sex_ encoded as 0 Male and 1 Female
@@ -36,3 +38,13 @@ Index(['age', 'sex', 'free_R_Thal', 'free_L_Thal', 'free_R_Puta',
        'free_L_Hipp', 'free_R_Accu', 'free_L_Accu'],
       dtype='object')
 ```   
+**MRI Data collection**
+A total of 4028 MRIs were collected in 5 years, 990 in the first visit, 768 in the second, 723 in the third, 634 in the fourth, 542 in the fifth, and 371 in the sixth year. The imaging data were acquired on a 3T General Electric scanner (GE Milwaukee) utilizing the following T1-weighted inversion recovery, flip angle $12\circ$, 3-D pulse sequence: echo time \textit{Min. full}, time inversion 600 ms, Receiver Bandwidth 19.23 kHz, field of view = 24.0 cm, slice thickness 1 mm, Freq. $\times$ Phase 288 $\times$ 288.
+
+The preprocessing of MRI 3 Tesla images in this study consisted of generating an isotropic brain image with non-brain tissue removed. We used the initial, preprocessing step in the two computational segmentation tool used in this study: FSL pipeline (fsl-anat \cite{fslanat}) and the FreeSurfer (recon-all \cite{reconall}) pipeline. 
+
+The stages in the FSL pipeline (in order) are reorient the images to the standard (MNI) orientation, automatically crop the image, bias-field correction (RF/B1-inhomogeneity-correction), registration to standard space (linear and non-linear), brain-extraction, tissue-type segmentation, and subcortical structure segmentation. 
+
+The stages in the FreeSurfer pipeline (in order) are surface-based stream, with skull-stripping cerebellum and brain stern removal, two hemispheres separation and brain voxels classification (white matter, gray matter and CSF), and finally brain segmentation (cortical, and subcortical). 
+
+We run both pipelines in an identical computational setting: Operating System Mac OS X, product version 10.14.5 and build version 18F132. The version of FreeSurfer is FreeSurfer-darwin-OSX-ElCapitan-dev-20190328-6241d26. The version of the BET tool for FSL is v2.1 - FMRIB Analysis Group, Oxford and the FIRST tool version is 6.0.
