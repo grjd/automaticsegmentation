@@ -3,7 +3,8 @@ This repository contains code and data used in the following publication:
 
 J. Gomez-Ramirez et al, "A comparative analysis of automated MRI brain segmentation in a large longitudinal dataset of elderly subjects" (pre-print on BioRxiv: https://doi.org/10.1101/2020.08.13.249474 )
 
-Abstract
+**Abstract***
+
 In this study, we perform a comparative analysis of automated segmentation of subcortical structures in the elderly brain. Manual segmentation is an extremely time-consuming task and automated methods are thus, gaining importance as clinical tool for diagnosis. In the last few years, AI-based segmentation has delivered in some cases superior results than manual segmentation, in both time and accuracy. 
 To test the performance of automated segmentation methods, the two most commonly used software libraries for brain segmentation -FreeSurfer and FSL- are put to work in a large dataset of 4000 MRI data collected for this study.
 We find a lack of linear correlation between the segmentation volume estimates obtained from FreeSurfer and FSL. On the other hand, FreeSurfer volume estimates tend to be larger than FSL estimates of the areas putamen, thalamus, amygdala, caudate, pallidum, hippocampus and accumbens.
@@ -13,6 +14,7 @@ Dataset description
 
 The dataset contains two csv files, one for the results of the automted segmentation for each of the tools used -FSL and FreeSurfer. Age contains the age of the aprticipant, Sex encoding is 0 Male, 1 Female, and the columns fsl|free_R|L|strcture contains the estimated volume of structure in $mm^3$.
 
+```
 df_fs_lon.csv.shape
 [7080 rows x 16 columns]
 df_fsl_lon.columns
@@ -29,4 +31,4 @@ Index(['age', 'sex', 'free_R_Thal', 'free_L_Thal', 'free_R_Puta',
        'free_L_Pall', 'free_R_Caud', 'free_L_Caud', 'free_R_Hipp',
        'free_L_Hipp', 'free_R_Accu', 'free_L_Accu'],
       dtype='object')
-   
+```   
