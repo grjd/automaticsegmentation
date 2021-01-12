@@ -43,8 +43,8 @@ A total of 4028 MRIs were collected in 5 years, 990 in the first visit, 768 in t
 The preprocessing of MRI 3 Tesla images in this study consisted of generating an isotropic brain image with non-brain tissue removed. We used the initial, preprocessing step in the two computational segmentation tool used in this study: FSL pipeline _(fsl-anat)_ and the FreeSurfer pipeline _(recon-all)_. 
 We run both pipelines in an identical computational setting: Operating System Mac OS X, product version 10.14.5 and build version 18F132. The version of FreeSurfer is FreeSurfer-darwin-OSX-ElCapitan-dev-20190328-6241d26. The version of the BET tool for FSL is v2.1 - FMRIB Analysis Group, Oxford and the FIRST tool version is 6.0.
 
-[FreeSurfer cortical reconstruction and parcellation process., 2017] FreeSurfer cortical reconstruc-
-tion and parcellation process. (2017).Anatomical processing script:recon-all.
-https://surfer.nmr.mgh.harvard.edu/fswiki/recon-all, Last accessed on 2020-15-30.
-[FSL, 2017] FSL (2017). Anatomical processing script: fsl_anat. https://fsl.fmrib.ox.ac.uk/
-fsl/fslwiki/fsl_anat, 
+_[FreeSurfer, 2017] FreeSurfer cortical reconstruction and parcellation process. (2017).Anatomical processing script:recon-all.
+https://surfer.nmr.mgh.harvard.edu/fswiki/recon-all._
+
+_[FSL, 2017] FSL (2017). Anatomical processing script: fsl_anat. https://fsl.fmrib.ox.ac.uk/
+fsl/fslwiki/fsl_anat._ 
