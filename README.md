@@ -1,4 +1,4 @@
-# Dataset supplement of volume estimates of subcortical strctures with FSL and FreeSurfer
+# Dataset supplement of volume estimates of subcortical structures with FSL and FreeSurfer
 This repository contains code and data used in the following publication:
 
 J. Gomez-Ramirez et al, "A comparative analysis of automated MRI brain segmentation in a large longitudinal dataset of elderly subjects" (pre-print on BioRxiv: https://doi.org/10.1101/2020.08.13.249474 )
