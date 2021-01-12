@@ -19,7 +19,7 @@ The dataset contains two csv files:
 The fields include in the dataset are as follows:
 - _Age_ the age of the participant in the moemnt of performing the MRI scan (%.2f)
 - _Sex_ encoded as 0 Male and 1 Female
-- Subcortical Volume estimates use the nomenclature: _[fsl|free]_[R|L]|[strcture]_ where structure can be Thalamus, Accumbens, Pallidum, Hippocampus, Amygdala, Caudate and Putamen. The volume is expressed in mm^3.
+- Subcortical Volume estimates use the nomenclature: [fsl|free] [R|L] [structure] where structure can be Thalamus, Accumbens, Pallidum, Hippocampus, Amygdala, Caudate and Putamen. The volume is expressed in mm^3.
 
 ```
 df_fs_lon.csv.shape
