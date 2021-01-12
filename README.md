@@ -39,8 +39,10 @@ Index(['age', 'sex', 'free_R_Thal', 'free_L_Thal', 'free_R_Puta',
       dtype='object')
 ```   
 **MRI Data collection**
-A total of 4028 MRIs were collected in 5 years, 990 in the first visit, 768 in the second, 723 in the third, 634 in the fourth, 542 in the fifth, and 371 in the sixth year. The imaging data were acquired on a 3T General Electric scanner (GE Milwaukee) utilizing the following T1-weighted inversion recovery, flip angle $12\circ$, 3-D pulse sequence: echo time \textit{Min. full}, time inversion 600 ms, Receiver Bandwidth 19.23 kHz, field of view = 24.0 cm, slice thickness 1 mm, Freq. $\times$ Phase 288 $\times$ 288.
-
+A total of 4028 MRIs were collected in 5 years, 990 in the first visit, 768 in the second, 723 in the third, 634 in the fourth, 542 in the fifth, and 371 in the sixth year. The imaging data were acquired on a 3T General Electric scanner (GE Milwaukee) utilizing the following T1-weighted inversion recovery, flip angle $12\circ$, 3-D pulse sequence: echo time \textit{Min. full}, time inversion 600 ms, Receiver Bandwidth 19.23 kHz, field of view = 24.0 cm, slice thickness 1 mm, Freq. $\times$ Phase .
+```math
+288 $\times$ 288
+```
 The preprocessing of MRI 3 Tesla images in this study consisted of generating an isotropic brain image with non-brain tissue removed. We used the initial, preprocessing step in the two computational segmentation tool used in this study: FSL pipeline (fsl-anat \cite{fslanat}) and the FreeSurfer (recon-all \cite{reconall}) pipeline. 
 
 The stages in the FSL pipeline (in order) are reorient the images to the standard (MNI) orientation, automatically crop the image, bias-field correction (RF/B1-inhomogeneity-correction), registration to standard space (linear and non-linear), brain-extraction, tissue-type segmentation, and subcortical structure segmentation. 
