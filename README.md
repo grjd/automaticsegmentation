@@ -15,6 +15,7 @@ In the era of big data, automated segmentation is called to play a preponderant 
 The dataset contains two csv files: 
 - *df_fsl_lon.csv* is the Pandas dataframe containing the results of the automated segmentation performed with FSL 
 - *df_free_lon.csv* contains the  Pandas dataframe containing the results of the automated segmentation performed with FreeSurfer. 
+
 The fields include in the dataset are as follows:
 - _Age_ the age of the participant in the moemnt of performing the MRI scan (%.2f)
 - _Sex_ encoded as 0 Male and 1 Female
