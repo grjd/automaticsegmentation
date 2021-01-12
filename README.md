@@ -12,7 +12,11 @@ In the era of big data, automated segmentation is called to play a preponderant 
 
 Dataset description
 
-The dataset contains two csv files, one for the results of the automted segmentation for each of the tools used -FSL and FreeSurfer. Age contains the age of the aprticipant, Sex encoding is 0 Male, 1 Female, and the columns fsl|free_R|L|strcture contains the estimated volume of structure in $mm^3$.
+The dataset contains two csv files, *df_fsl_lon.csv* is the Pandas dataframe containing the the results of the automted segmentation with FSL and *df_free_lon.csv* contained the automated segmentation output obtained with FreeSurfer. 
+The fields include in the dataset are as follows:
+- Age the age of the participant in the moemnt of performing the MRI scan (%.2f)
+- Sex encoded as 0 Male and 1 Female
+- Subcortical Volume estimates use the nomenclature:, [fsl|free]_[R|L]|[strcture] where structure can be Thalamus, Accumbens, Pallidum, Hippocampus, Amygdala, Caudate and Putamen. The volume is expressed in  $$mm^3$$.
 
 ```
 df_fs_lon.csv.shape
