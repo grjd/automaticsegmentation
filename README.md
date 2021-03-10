@@ -5,8 +5,7 @@ J. Gomez-Ramirez et al, "A comparative analysis of automated MRI brain segmentat
 
 **Abstract**
 
-In this study, we perform a comparative analysis of automated image segmentation of subcortical structures in the elderly brain. Manual segmentation is very time-consuming and automated methods are thus, gaining importance as a clinical tool for diagnosis. The two most commonly used software
-libraries for brain segmentation -FreeSurfer and FSL- are put to work in a large dataset of 4000 magnetic resonance imaging (MRI) scans collected for this study. We find a lack of linear correlation between the segmentation volume estimates obtained from FreeSurfer and FSL. On the other hand, FreeSurfer volume estimates tend to be larger thanFSL estimates of the areas putamen, thalamus, amygdala, caudate, pallidum, hippocampus, and accumbens.
+In this study, we perform a comparative analysis of automated image segmentation of subcortical structures in the elderly brain. Manual segmentation is very time-consuming and automated methods are thus, gaining importance as a clinical tool for diagnosis. The two most commonly used software libraries for brain segmentation -FreeSurfer and FSL- are put to work in a large dataset of 4,028 magnetic resonance imaging (MRI) scans collected for this study. We find a lack of linear correlation between the segmentation volume estimates obtained from FreeSurfer and FSL. On the other hand, FreeSurfer volume estimates tend to be larger than FSL estimates of the areas putamen, thalamus, amygdala, caudate, pallidum, hippocampus, and accumbens.
 The characterization of the performance of brain segmentation algorithms in large datasets as the one presented here, is a necessary step towards partially or fully automated end-to-end neuroimaging workflow both in clinical and research settings.
 
 **Dataset description**
